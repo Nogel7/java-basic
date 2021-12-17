@@ -1,0 +1,21 @@
+package polymorphism;
+
+public class Salesman extends Person {
+	
+	private int score;
+	
+	public Salesman(String name, int age, int score) {
+	     super(name, age);
+	     this.score = score;
+
+    }
+	
+	public void showPerson() {
+		super.showPerson();// 이름과 나이를 콘솔에 찍어주는 구문
+		System.out.println("세일즈맨의 판매누적 : " + score);
+	}
+	
+	public void showSalesman() {
+		System.out.println("저는 판매원입니다.");
+	}
+}
