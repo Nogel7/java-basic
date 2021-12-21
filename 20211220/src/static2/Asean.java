@@ -13,7 +13,6 @@ public class Asean {
 	private static int presentationScore = 19;
 	// 생성자는 객체 생성시 출석, 중간고사, 기말고사 점수만 받아서 초기화합니다.
 	public Asean(int cheak, int midTerm, int finalTerm) {
-		
 		this.cheak = cheak;
 		this.midTerm = midTerm;
 		this.finalTerm = finalTerm;
