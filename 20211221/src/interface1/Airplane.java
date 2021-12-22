@@ -4,10 +4,12 @@ public class Airplane implements Vehicle {
 	
 	private int speed;
 	private int gas;
+	private String name;
 	
-	public Airplane() {
+	public Airplane(String name) {
 		this.speed = MIN_SPD;
 		this.gas = AIRPLANE_MAX_GAS;
+		this.name = name;
 	}
 
 	@Override
@@ -48,6 +50,7 @@ public class Airplane implements Vehicle {
 		System.out.println("현재 비행기의 정보");
 		System.out.println("현재속도 : " + speed);
 		System.out.println("현재연료량 : " + gas);
+		System.out.println("현재 기장 : " + name);
 		System.out.println("---------------------");
 		
 	}
