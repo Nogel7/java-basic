@@ -16,7 +16,7 @@ public class TryCatch02P353 {
 		int[] arr = {0, 1, 2};
 		
 		try {
-			for(int a = 0; a < 4; a++) {
+			for(int a : arr) {// 항샹된 for문은 절대 인덱스를 오버할 수 없음
 			System.out.println(arr[a]);
 			}System.out.println("모든 번호 목록입니다.");
 		}catch(Exception e) {
