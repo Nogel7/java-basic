@@ -17,7 +17,7 @@ public class Builder07P408 {
 		
 		// String자료형인 hangul을 다시 StringBuilder형으로 바꿔서
 		// StringBuilder str2 라는 변수에 저장해주세요.
-		String str2 = hangul.toString();
+		StringBuilder str2 = new StringBuilder(hangul);
 		System.out.println(str2);
 				
 
