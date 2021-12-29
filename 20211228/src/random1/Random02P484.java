@@ -16,31 +16,28 @@ public class Random02P484 {
 		
 		// 동전 던질 횟수 입력받기
 		System.out.println("동전 던질 횟수를 알려주세요.");
-		int count = scan.nextInt();
+		int count = scan.nextInt();	
 		
+		// 앞면 뒷면 카운팅할 변수 생성(0으로 시작)
+		int front = 0;
+		int back = 0;	
 		
-		int head = 0;
-		int tail = 0;
-		
-
-	    Random coin = new Random();
-	    
-	   for(int a = 0; a < count; a++) {
-		   // random.nextBoolean()이 true면 앞면 1증가
-		   // false면 뒷면 1증가하도록 조건식 작성
-		   boolean result = coin.nextBoolean();
-		   if(result == true) {
-			   head++;
-		   }else if(result == false) {
-			   tail++;
-		   }
-	    	
-	    }
-	    // 다 돌고나서돌린 결과값 콘솔찍기
-	    System.out.println("--동전을 " + count + "회 던진 결과--");
-		System.out.println("앞면: " + head);
-		System.out.println("뒷면: " + tail);
-		
+		//랜덤 변수 실행 후 반복은 동전 던질 횟수만큼 돌려서
+		Random random = new Random();
+		for(int i=0; i<count; i++) {
+		// random.nextBoolean()이 true면 앞면 1 증가
+		// false면 뒷면 1증가하도록 조건식 작성
+			//boolean result = random.nextBoolean();
+			if(random.nextBoolean()) {
+				front++;
+			}else {
+				back++;
+			}
 		}
+		// 다 돌고나서돌린 결과값 콘솔찍기
+		System.out.println(count + "바퀴 돌린 결과값 : ");
+		System.out.println("앞면 : " + front);
+		System.out.println("뒷면 : " + back);
+	}
 
 }
