@@ -1,5 +1,5 @@
 
-public class Dinary04P77 {
+public class Binary04P77 {
 
 	public static void main(String[] args) {
 		// 비트 이동 연산자는 숫자 >> (<<) 자리수 문법을 사용합니다.

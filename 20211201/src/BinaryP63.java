@@ -11,7 +11,7 @@ public class BinaryP63 {
         System.out.println(17 - 21);
         System.out.println(2 * 3);
         // /는 왼쪽 수를 오른쪽 수로 나눠서 몫을 구합니다(정수 / 정수 = 정수)
-        System.out.println(7.0 / 2); // 3.5를 정수로 바꿔서 출력
+        System.out.println(7 / 2.0); // 3.5를 정수로 바꿔서 출력
         // %는 정수 최대 몫을 구하고 남은 값만 출력합니다.
         System.out.println(10 % 3);
         // 연산자의 우선순위 그대로 존재합니다.
